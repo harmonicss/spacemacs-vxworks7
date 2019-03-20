@@ -163,7 +163,7 @@ WIND_HOME (e.g. \"C:\/WindRiver_vxw7.0\/\" needs a trailing slash)")
   (if (eq system-type 'gnu/linux)
       (call-process (format "%s/wrenv.sh" vxworks-install-dir) nil "vxworks7env.el" nil "-p" "vxworks-7" "-f" "bat" "-o" "print_env")
     ;; default to windows
-    (call-process "wrenv" nil "vxworks7env.el" nil "-p" "vxworks-6.9" "-f" "bat" "-o" "print_env"))
+    (call-process "wrenv" nil "vxworks7env.el" nil "-p" "vxworks-7" "-f" "bat" "-o" "print_env"))
   (convert-file-to-emacs-env))
 
 (defun convert-line-to-emacs-env ()
